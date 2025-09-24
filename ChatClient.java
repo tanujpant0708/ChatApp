@@ -10,7 +10,7 @@ public class ChatClient {
             System.out.print("Enter your name: ");
             String userName = console.readLine();
 
-            Socket socket = new Socket("localhost", 1234);
+            Socket socket = new Socket("chatapp-production-706d.up.railway.app", 1234);
 
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
