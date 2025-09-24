@@ -12,7 +12,7 @@ public class ChatClient {
 
             // ❌ This port is incorrect. Your server is on port 12345.
             // ✅ Change the port number below to 12345 to connect to your server.
-            Socket socket = new Socket("chatapp-production-706d.up.railway.app", 12345);
+            Socket socket = new Socket("chatapp-production-706d.up.railway.app", 8080);
 
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
