@@ -4,7 +4,7 @@ import java.io.*;
 public class ChatServer {
     public static void main(String[] args) throws Exception {
         // Railway provides PORT automatically
-        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "12345"));
+        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
         ServerSocket server = new ServerSocket(port);
         System.out.println("Server started on port " + port);
 
